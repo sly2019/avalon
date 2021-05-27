@@ -13,7 +13,9 @@
     <artifactId>avalon-demo</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>sly-demo-quartz</module>
+        <module>avalon-demo-quartz</module>
+        <module>avalon-demo-json</module>
+        <module>avalon-demo-swagger</module>
     </modules>
 
 

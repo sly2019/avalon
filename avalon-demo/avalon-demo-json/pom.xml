@@ -9,11 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>sly-demo-quartz</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>sly-demo-quartz-1</module>
-    </modules>
+    <artifactId>avalon-demo-json</artifactId>
 
 
 </project>

@@ -16,8 +16,12 @@ public class Test1 {
             System.out.println("座号为"+v.getSeatNo()+"的观众入座");
         }
         //小丑开始表演
+        System.out.println("呼叫小丑演出start");
         clown.perform();
+        System.out.println("呼叫小丑演出over");
         //小丑表演完毕，退场
+        System.out.println("呼叫小丑退场start");
         clown.exit();
+        System.out.println("呼叫小丑退场over");
     }
 }
