@@ -1,4 +1,4 @@
-package com.sly.base.common.root.runtime;
+package com.sly.base.common.runtime;
 
 /**
  * @Author by wj on 2021/5/26 16:42
