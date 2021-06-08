@@ -16,6 +16,9 @@
         <module>avalon-demo-quartz</module>
         <module>avalon-demo-json</module>
         <module>avalon-demo-swagger</module>
+        <module>avalon-demo-docker</module>
+        <module>avalon-demo-file</module>
+        <module>avalon-demo-supos</module>
     </modules>
 
 
