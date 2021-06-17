@@ -19,6 +19,23 @@
         <module>avalon-demo-docker</module>
         <module>avalon-demo-file</module>
         <module>avalon-demo-supos</module>
+        <module>avalon-demo-websocket</module>
+        <module>avalon-demo-shiro</module>
+        <module>avalon-demo-jpa</module>
+        <module>avalon-demo-mybatis</module>
+        <module>avalon-demo-mybatisplus</module>
+        <module>avalon-demo-jdbc</module>
+        <module>avalon-demo-es</module>
+        <module>avalon-demo-redis</module>
+        <module>avalon-demo-influxdb</module>
+        <module>avalon-demo-security</module>
+        <module>avalon-demo-oauth2</module>
+        <module>avalon-demo-kafka</module>
+        <module>avalon-demo-zookeeper</module>
+        <module>avalon-demo-hadoop</module>
+        <module>avalon-demo-hbase</module>
+        <module>avalon-demo-phoenix</module>
+        <module>avalon-demo-zabbix</module>
     </modules>
 
 
