@@ -36,6 +36,7 @@
         <module>avalon-demo-hbase</module>
         <module>avalon-demo-phoenix</module>
         <module>avalon-demo-zabbix</module>
+        <module>avalon-demo-timer</module>
     </modules>
 
 
