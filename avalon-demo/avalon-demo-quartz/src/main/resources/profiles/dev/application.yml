@@ -1,0 +1,36 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: avalon-demo-quartz
+  datasource:
+    url: jdbc:mysql://localhost:33106/demo?useSSL=false&characterEncoding=utf8&useLegacyDatetimeCode=false&serverTimezone=UTC&zeroDateTimeBehavior=CONVERT_TO_NULL
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    max-idle: 10
+    max-wait: 10000
+    min-idle: 5
+    initial-size: 5
+    validation-query: 'SELECT 1'
+    test-on-borrow: false
+    test-with-idle: true
+    time-between-eviction-runs-millis: 18800
+    jdbc-interceptors: ConnectionState;SloQueryReport(threshold=30)
+    schema:
+      - classpath:sqlScript/init.sql
+    initialization-mode: always
+
+mybatis:
+  config-location: 'classpath:mybatis/mybatis-config.xml'
+
+swagger:
+  title: API文档
+  description: API文档
+  version: 1.0.0
+  termsOfServiceUrl: http://www.supos.com
+  contact:
+    name: sly
+    url: http://www.sly.com
+    email: sly@163.com

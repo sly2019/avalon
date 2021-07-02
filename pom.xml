@@ -19,6 +19,8 @@
         <module>avalon-basic</module>
         <module>avalon-algorithm</module>
         <module>avalon-demo</module>
+        <module>avalon-app</module>
     </modules>
+
 
 </project>

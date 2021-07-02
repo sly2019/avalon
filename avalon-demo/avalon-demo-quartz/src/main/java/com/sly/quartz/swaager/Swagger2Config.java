@@ -1,4 +1,4 @@
-package com.sly.demo.swagger;
+package com.sly.quartz.swaager;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -60,7 +60,7 @@ public class Swagger2Config {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.sly.demo.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.sly.quartz.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
