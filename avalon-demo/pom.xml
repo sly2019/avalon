@@ -40,6 +40,7 @@
         <module>avalon-demo-timer</module>
         <module>avalon-demo-schedule</module>
         <module>avalon-demo-docs</module>
+        <module>avalon-demo-jacob</module>
     </modules>
 
     <properties>
