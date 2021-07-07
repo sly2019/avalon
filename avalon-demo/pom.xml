@@ -39,6 +39,7 @@
         <module>avalon-demo-zabbix</module>
         <module>avalon-demo-timer</module>
         <module>avalon-demo-schedule</module>
+        <module>avalon-demo-docs</module>
     </modules>
 
     <properties>
