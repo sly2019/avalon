@@ -41,6 +41,8 @@
         <module>avalon-demo-schedule</module>
         <module>avalon-demo-docs</module>
         <module>avalon-demo-jacob</module>
+        <module>avalon-demo-baidu-ai</module>
+        <module>avalon-demo-voice</module>
     </modules>
 
     <properties>

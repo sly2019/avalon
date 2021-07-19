@@ -25,7 +25,7 @@ public class SpeechServiceImpl implements SpeechService {
         log.info("语音合成时间:{}",LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
         ActiveXComponent activeXComponent = null;
         String format = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")) +  "/" + LocalDateTime.now().getHour();
-       String path =  projectConfig.getFilePath() + format;
+        String path =  projectConfig.getFilePath() + format;
         fileNexistThenCreate( path);
         String fileName = UUID.randomUUID().toString().replaceAll("-","") +".mp3";
         String filePath = path +"/"+ fileName;
@@ -33,6 +33,8 @@ public class SpeechServiceImpl implements SpeechService {
             activeXComponent = new ActiveXComponent("Sapi.SpVoice");
 //          运行时输出语音内容
             Dispatch dispatch = activeXComponent.getObject();
+            /*Variant variant = Dispatch.call(dispatch, "GetDescription");
+            log.info("当前语音库：{}", variant.toString());*/
 //          设置音量
             //activeXComponent.setProperty("Volume", new Variant(100));
             activeXComponent.setProperty("Volume", new Variant(100));

@@ -9,13 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>shujin</artifactId>
-    <version>1.0</version>
-    <packaging>jar</packaging>
-
-    <dependencies>
-
-    </dependencies>
+    <artifactId>avalon-app-lswj</artifactId>
 
 
 </project>

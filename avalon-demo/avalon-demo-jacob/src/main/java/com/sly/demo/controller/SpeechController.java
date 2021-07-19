@@ -32,6 +32,7 @@ public class SpeechController {
     private static RateLimiter rateLimiter  = RateLimiter.create(15);
     @RequestMapping(value = "/compound",method = RequestMethod.POST)
     public Map<String,Object> voiceSynthesis(@RequestBody JSONObject jsonObject, HttpServletRequest request){
+        log.info(projectConfig.getTest());
         if (rateLimiter.tryAcquire(1000,TimeUnit.MILLISECONDS)){
             log.info("获取令牌失败");
         }

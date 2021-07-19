@@ -15,6 +15,9 @@ public class ProjectConfig {
     @Value("${project.file.path}")
     private String filePath;
 
+    @Value("${project.test:ttt}")
+    private String test;
+
     public String getFilePath() {
         return filePath + "/";
     }
