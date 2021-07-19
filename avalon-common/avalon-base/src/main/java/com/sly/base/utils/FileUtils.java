@@ -1,15 +1,12 @@
 package com.sly.base.utils;
 
-import lombok.extern.slf4j.Slf4j;
-
 import java.io.File;
 import java.util.List;
 
 /**
- * @Author by wj on 2021/7/9 15:57
+ * @Created by wj on 2021/7/9 15:57
  * @Description TODO
  */
-@Slf4j
 public class FileUtils {
 
     /**

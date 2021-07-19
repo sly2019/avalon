@@ -4,7 +4,7 @@ import java.util.Observable;
 import java.util.Observer;
 
 /**
- * @Author by wj on 2021/5/26 10:37
+ * @Created by wj on 2021/5/26
  * @Description TODO
  */
 public class Viewer implements Observer {

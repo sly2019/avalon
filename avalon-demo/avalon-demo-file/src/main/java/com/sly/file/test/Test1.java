@@ -1,7 +1,7 @@
 package com.sly.file.test;
 
 /**
- * @Author by wj on 2021/7/6 18:58
+ * @Created by wj on 2021/7/6
  * @Description TODO
  */
 public class Test1 {

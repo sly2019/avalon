@@ -8,7 +8,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
 /**
- * @Author by wj on 2021/7/6 16:50
+ * @Created by wj on 2021/7/6
  * @Description TODO
  */
 public class Base64Utils {

@@ -1,11 +1,9 @@
 package com.sly.designpattern.module.observer.demo2;
 
 import io.reactivex.Observable;
-import io.reactivex.Scheduler;
-import io.reactivex.schedulers.Schedulers;
 
 /**
- * @Author by wj on 2021/5/26 14:52
+ * @Created by wj on 2021/5/26
  * @Description TODO
  */
 public class Test1 {

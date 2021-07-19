@@ -6,7 +6,7 @@ import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
 /**
- * @Author by wj on 2021/6/29 14:20
+ * @Created by wj on 2021/6/29
  * @Description TODO
  */
 @Slf4j

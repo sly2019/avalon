@@ -6,7 +6,7 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 /**
- * @Author by wj on 2021/6/29 14:19
+ * @Created by wj on 2021/6/29
  * @Description TODO
  */
 @Slf4j

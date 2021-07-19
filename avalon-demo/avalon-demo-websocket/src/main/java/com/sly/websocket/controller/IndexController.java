@@ -5,7 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * @Author by wj on 2021/6/9 11:25
+ * @Created by wj on 2021/6/9
  * @Description TODO
  */
 @Controller

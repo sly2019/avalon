@@ -13,7 +13,7 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
 /**
- * @Author by wj on 2021/6/28 10:19
+ * @Created by wj on 2021/6/28
  * @Description TODO
  */
 @Slf4j

@@ -4,7 +4,7 @@ import com.sly.quartz.base.common.Response;
 import lombok.Getter;
 
 /**
- * @Author by wj on 2021/7/1 14:09
+ * @Created by wj on 2021/7/1
  * @Description 服务异常
  */
 @Getter

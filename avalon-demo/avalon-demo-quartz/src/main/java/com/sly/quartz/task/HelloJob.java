@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.quartz.*;
 
 /**
- * @Author by wj on 2021/6/29 14:11
+ * @Created by wj on 2021/6/29
  * @Description DisallowConcurrentExecution注解表示禁用并发，当前任务执行完后，才会进行下一次调度
  */
 @Slf4j

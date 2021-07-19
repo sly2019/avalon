@@ -1,7 +1,7 @@
 package com.sly.designpattern.module.observer.demo1;
 
 /**
- * @Author by wj on 2021/5/26 10:39
+ * @Created by wj on 2021/5/26
  * @Description TODO
  */
 public class Test1 {

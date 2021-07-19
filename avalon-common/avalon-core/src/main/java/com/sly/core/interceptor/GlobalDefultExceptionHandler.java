@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 /**
- * @Author by wj on 2021/7/19 16:24
+ * @Created by wj on 2021/7/19
  * @Description 统一拦截异常
  */
 @Slf4j

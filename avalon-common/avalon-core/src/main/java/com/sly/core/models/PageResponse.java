@@ -10,16 +10,13 @@ import lombok.NoArgsConstructor;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * @Author by wj on 2021/7/19 16:24
- * @Description TODO
- */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @ApiModel
 public class PageResponse<T> {
+
 
     /**
      * 查询数据列表

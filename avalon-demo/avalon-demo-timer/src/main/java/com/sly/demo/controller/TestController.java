@@ -9,7 +9,7 @@ import javax.annotation.Resource;
 import java.util.TimerTask;
 
 /**
- * @Author by wj on 2021/6/25 18:22
+ * @Created by wj on 2021/6/25 18:22
  * @Description TODO
  */
 @RestController

@@ -5,10 +5,6 @@ import io.swagger.annotations.ApiModelProperty;
 
 import java.io.Serializable;
 
-/**
- * @Author by wj on 2021/7/19 16:24
- * @Description TODO
- */
 @ApiModel
 public class Pagination implements Serializable {
 

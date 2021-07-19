@@ -3,7 +3,7 @@ package com.sly.supos.utils;
 import lombok.Data;
 
 /**
- * @Author by wj on 2021/6/8 15:04
+ * @Created by wj on 2021/6/8
  * @Description TODO
  */
 @Data

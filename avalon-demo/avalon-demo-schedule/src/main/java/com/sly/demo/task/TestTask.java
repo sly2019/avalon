@@ -5,7 +5,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 /**
- * @Author by wj on 2021/7/1 11:22
+ * @Created by wj on 2021/7/1
  * @Description Scheduled为单线程
  */
 @Slf4j

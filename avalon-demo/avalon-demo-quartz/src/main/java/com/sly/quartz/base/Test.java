@@ -1,7 +1,7 @@
 package com.sly.quartz.base;
 
 /**
- * @Author by wj on 2021/6/30 8:56
+ * @Created by wj on 2021/6/30
  * @Description TODO
  */
 public class Test {

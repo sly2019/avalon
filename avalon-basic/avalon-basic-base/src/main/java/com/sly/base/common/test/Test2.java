@@ -1,7 +1,7 @@
 package com.sly.base.common.test;
 
 /**
- * @Author by wj on 2021/6/23 18:28
+ * @Created by wj on 2021/6/23
  * @Description TODO
  */
 public class Test2 {

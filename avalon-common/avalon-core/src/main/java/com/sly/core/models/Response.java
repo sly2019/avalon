@@ -1,15 +1,12 @@
 package com.sly.core.models;
 
+import com.alibaba.fastjson.JSON;
 import com.sly.core.exception.ServiceException;
 import com.sly.core.utils.ServletUtils;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
-/**
- * @Author by wj on 2021/7/19 16:30
- * @Description TODO
- */
 @Data
 @ApiModel
 public class Response<T> {
@@ -80,5 +77,9 @@ public class Response<T> {
         result.path = ServletUtils.request().getRequestURI();
 
         return result;
+    }
+
+    public String toString() {
+        return JSON.toJSONString(this);
     }
 }

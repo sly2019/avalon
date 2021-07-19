@@ -11,6 +11,7 @@
 
     <artifactId>avalon-common</artifactId>
     <packaging>pom</packaging>
+
     <modules>
         <module>avalon-core</module>
         <module>avalon-base</module>

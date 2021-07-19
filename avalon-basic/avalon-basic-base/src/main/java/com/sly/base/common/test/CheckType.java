@@ -1,7 +1,7 @@
 package com.sly.base.common.test;
 
 /**
- * @Author by wj on 2021/6/24 13:25
+ * @Created by wj on 2021/6/24
  * @Description TODO
  */
 public enum  CheckType {
