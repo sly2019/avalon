@@ -12,7 +12,6 @@
     <artifactId>avalon-app</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>shujin</module>
         <module>cunqianguan</module>
     </modules>
 
