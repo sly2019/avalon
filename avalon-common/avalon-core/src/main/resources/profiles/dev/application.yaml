@@ -1,0 +1,56 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: product_level
+  servlet:
+    multipart:
+      max-request-size: 100MB
+      max-file-size: 100MB
+  datasource:
+    url: jdbc:mysql://localhost:33106/product_level?useSSL=false&characterEncoding=utf8&useTimezone=true&serverTimezone=GMT%2B8&zeroDateTimeBehavior=CONVERT_TO_NULL
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #连接池配置
+    max-idle: 10
+    max-wait: 10000
+    min-idle: 5
+    initial-size: 5
+    validation-query: 'SELECT 1'
+    test-on-borrow: false
+    test-while-idle: true
+    time-between-eviction-runs-millis: 18800
+    jdbc-interceptors: ConnectionState;SlowQueryReport(threshold=30)
+    schema:
+    - classpath:sqlScript/init_zh-cn.sql
+    initialization-mode: always
+
+mybatis:
+  config-location: 'classpath:mybatis/mybatis-config.xml'
+
+swagger:
+  title: supOS 京博石化产线智能升级 API文档
+  description: supOS tools Api Documentation
+  version: 1.0.0
+  termsOfServiceUrl: http://www.supos.com
+  contact:
+    name: supos
+    url: http://www.supos.com
+    email:
+
+supos:
+  address: null
+
+oauthService:
+  baseUrl: /oauth2
+
+openapiService:
+  baseUrl: /openapi
+
+app:
+  appId: App_413dd16ec83dac118b11e60c9b1d1037
+  secret: 707803C451C28DCFB92E552C35D7F5A6
+#  appId: ${AppID}
+#  secret: ${AppSecret}

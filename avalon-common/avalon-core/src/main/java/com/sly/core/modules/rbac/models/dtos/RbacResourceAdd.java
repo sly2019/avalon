@@ -12,6 +12,9 @@ import lombok.Data;
 @ApiModel
 public class RbacResourceAdd {
 
+    @ApiModelProperty(value = "id", required = false, example = "rd34bs78lkj575bn751")
+    private String id;
+
     @ApiModelProperty(value = "pid", required = false, example = "ea34bs34lkj556bn744")
     private String pid;
 
@@ -20,8 +23,5 @@ public class RbacResourceAdd {
 
     @ApiModelProperty(value = "说明", required = false, example = "说明")
     private String description;
-
-    @ApiModelProperty(value = "配置", required = false, example = "\"{}\"")
-    private String config;
 
 }

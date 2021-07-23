@@ -43,6 +43,8 @@
         <module>avalon-demo-jacob</module>
         <module>avalon-demo-baidu-ai</module>
         <module>avalon-demo-voice</module>
+        <module>avalon-demo-excel</module>
+        <module>avalon-demo-basic</module>
     </modules>
 
     <properties>
