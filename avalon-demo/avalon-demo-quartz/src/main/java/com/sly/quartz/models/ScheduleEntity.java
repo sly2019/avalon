@@ -5,8 +5,8 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * 定时任务实体
- * @author yang
+ * @Created by wj on 2021/7/23
+ * @Description TODO
  */
 @Data
 public class ScheduleEntity implements Serializable {

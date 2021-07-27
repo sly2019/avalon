@@ -40,7 +40,7 @@ public class Response<T> {
         return res;
     }
 
-    private static <T> Response<T> ok(T data){
+    public static <T> Response<T> ok(T data){
         Response<T> res = new Response<T>();
         res.code = DEFAULT_OK_CODE;
         res.message = DEFAULT_OK_MESSAGE;

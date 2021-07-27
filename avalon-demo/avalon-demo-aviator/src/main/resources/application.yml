@@ -1,0 +1,9 @@
+server:
+  port: 8083
+
+project:
+  test:
+    test1: 1
+    test2:
+    test4: ${JAVA_HOME}
+    test5: ${JAVA_HOME1}

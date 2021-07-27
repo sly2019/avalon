@@ -45,6 +45,7 @@
         <module>avalon-demo-voice</module>
         <module>avalon-demo-excel</module>
         <module>avalon-demo-basic</module>
+        <module>avalon-demo-aviator</module>
     </modules>
 
     <properties>

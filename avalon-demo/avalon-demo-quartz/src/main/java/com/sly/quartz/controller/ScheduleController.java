@@ -1,13 +1,17 @@
 package com.sly.quartz.controller;
 
 import com.sly.quartz.base.common.Response;
-import com.sly.quartz.task.HelloJob;
+import com.sly.quartz.models.ScheduleEntity;
+import com.sly.quartz.models.dtos.ScheduleAdd;
+import com.sly.quartz.service.SchedulerService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.quartz.*;
-import org.quartz.impl.StdSchedulerFactory;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * @Created by wj on 2021/6/29
@@ -15,37 +19,35 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Slf4j
 @RestController
-@RequestMapping("/demo-quartz/schedule")
+@Api(tags = "定时任务")
+@RequestMapping("/demo-quartz")
 public class ScheduleController {
 
-    @PostMapping("/v1/test/schedule")
-    public Response testAdd(String jobName, String jobGroup){
-        try {
-            //获取一个调度程序实例
-            Scheduler scheduler = StdSchedulerFactory.getDefaultScheduler();
-            log.info("scheduler: {}-{}", scheduler.getSchedulerInstanceId(), scheduler.getSchedulerName());
-            scheduler.getContext().put("skey", "svalue");
-            //创建一个触发器
-            Trigger trigger = TriggerBuilder.newTrigger()
-                    .withIdentity("trigger1", "group1")
-                    .usingJobData("t1", "tv1")
-                    .withSchedule(SimpleScheduleBuilder.simpleSchedule().withIntervalInSeconds(10).repeatForever())
-                    .build();
-            trigger.getJobDataMap().put("t2", "tv2");
-            //创建一个job
-            JobDetail jobDetail = JobBuilder.newJob(HelloJob.class)
-                    .usingJobData("j1", "jv1")
-                    .withIdentity(jobName, jobGroup)
-                    .build();
-            jobDetail.getJobDataMap().put("j2", "jv2");
-            //注册trigger并启动schedule
-            scheduler.scheduleJob(jobDetail, trigger);
-            scheduler.start();
-        } catch (SchedulerException e) {
-            e.printStackTrace();
-            return Response.error();
-        }
+    @Autowired
+    private SchedulerService schedulerService;
+
+    /**
+     * 新增定时任务
+     * @param scheduleAdd
+     * @return
+     */
+    @PostMapping("/v1/schedule")
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "新增定时任务")
+    public Response add(@RequestBody ScheduleAdd scheduleAdd){
+        schedulerService.add(scheduleAdd);
         return Response.ok();
+    }
+
+    /**
+     * 新增定时任务
+     * @return
+     */
+    @GetMapping("/v1/schedule/all")
+    @ResponseStatus(HttpStatus.OK)
+    @ApiOperation(value = "新增定时任务")
+    public Response<List<ScheduleEntity>> getAll(){
+        return Response.ok(schedulerService.getAllScheduleJob());
     }
 
 
