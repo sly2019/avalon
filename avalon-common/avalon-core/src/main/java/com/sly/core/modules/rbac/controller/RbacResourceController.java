@@ -38,4 +38,8 @@ public class RbacResourceController {
         return Response.ok(rbacResourceService.getPage(rbacResourceQueryBean, pageNo, pageSize));
     }
 
+
+
+    
+
 }

@@ -1,6 +1,7 @@
 package com.sly.core.modules.rbac.querywraper;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.sly.base.utils.SqlUtils;
 import com.sly.core.modules.rbac.enums.RbacResourceColumnEnums;
 import com.sly.core.modules.rbac.models.RbacResource;
 import com.sly.core.modules.rbac.querybean.RbacResourceQueryBean;
@@ -33,9 +34,10 @@ public class RbacResourceQueryWrapper {
             }
         }
 
+        // name
         {
             if(!StringUtils.isEmpty(queryBean.getNameLike())){
-
+                wrapper.like(RbacResourceColumnEnums.PropertyEnums.name.name(), SqlUtils.buildLikeString(queryBean.getNameLike()));
             }
         }
 
