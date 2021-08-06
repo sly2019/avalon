@@ -9,7 +9,7 @@ spring:
       max-request-size: 100MB
       max-file-size: 100MB
   datasource:
-    url: jdbc:mysql://localhost:33106/product_level?useSSL=false&characterEncoding=utf8&useTimezone=true&serverTimezone=GMT%2B8&zeroDateTimeBehavior=CONVERT_TO_NULL
+    url: jdbc:mysql://localhost:33106/avalon?useSSL=false&characterEncoding=utf8&useTimezone=true&serverTimezone=GMT%2B8&zeroDateTimeBehavior=CONVERT_TO_NULL
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -31,26 +31,11 @@ mybatis:
   config-location: 'classpath:mybatis/mybatis-config.xml'
 
 swagger:
-  title: supOS 京博石化产线智能升级 API文档
-  description: supOS tools Api Documentation
+  title: avalon core API文档
+  description: avlon core Api Documentation
   version: 1.0.0
-  termsOfServiceUrl: http://www.supos.com
+  termsOfServiceUrl:
   contact:
-    name: supos
-    url: http://www.supos.com
+    name:
+    url:
     email:
-
-supos:
-  address: null
-
-oauthService:
-  baseUrl: /oauth2
-
-openapiService:
-  baseUrl: /openapi
-
-app:
-  appId: App_413dd16ec83dac118b11e60c9b1d1037
-  secret: 707803C451C28DCFB92E552C35D7F5A6
-#  appId: ${AppID}
-#  secret: ${AppSecret}

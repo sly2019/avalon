@@ -32,6 +32,7 @@
         <module>avalon-demo</module>
         <module>avalon-app</module>
         <module>avalon-common</module>
+        <module>avalon-algorithm</module>
     </modules>
 
     <dependencyManagement>
