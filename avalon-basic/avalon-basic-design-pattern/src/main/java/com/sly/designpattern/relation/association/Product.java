@@ -1,4 +1,4 @@
-package com.sly.designpattern.relation.dependency;
+package com.sly.designpattern.relation.association;
 
 import lombok.Data;
 
@@ -7,8 +7,9 @@ import lombok.Data;
  * @Description TODO
  */
 @Data
-public class Book {
+public class Product {
 
     private String name;
+    private Customer customer;
 
 }

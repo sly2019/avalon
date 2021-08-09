@@ -15,4 +15,5 @@ public class Test {
         human.eat(food);
         human.read(book);
     }
+
 }
