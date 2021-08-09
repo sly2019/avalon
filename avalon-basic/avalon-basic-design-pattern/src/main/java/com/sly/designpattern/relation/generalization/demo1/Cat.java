@@ -1,4 +1,4 @@
-package com.sly.designpattern.relation.generalization;
+package com.sly.designpattern.relation.generalization.demo1;
 
 /**
  * @Created by wj on 2021/8/9
