@@ -1,4 +1,4 @@
-package com.sly.designpattern.module.observer.demo1;
+package com.sly.designpattern.pattern.observer.demo1;
 
 import java.util.Observable;
 import java.util.Random;

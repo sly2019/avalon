@@ -1,4 +1,4 @@
-package com.sly.designpattern.module.observer;
+package com.sly.designpattern.pattern.observer;
 
 /**
  * @Created by wj on 2021/5/26

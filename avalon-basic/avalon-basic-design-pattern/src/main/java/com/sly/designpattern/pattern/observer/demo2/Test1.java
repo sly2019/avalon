@@ -1,4 +1,4 @@
-package com.sly.designpattern.module.observer.demo2;
+package com.sly.designpattern.pattern.observer.demo2;
 
 import io.reactivex.Observable;
 
